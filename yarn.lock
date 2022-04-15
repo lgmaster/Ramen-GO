@@ -1670,7 +1670,7 @@ color@^3.0.0:
     color-convert "^1.9.3"
     color-string "^1.6.0"
 
-colors@^1.1.2, colors@^1.4.0:
+colors@1.4.0, colors@^1.1.2:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
   integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
@@ -1686,6 +1686,11 @@ command-exists@^1.2.6:
   version "1.2.9"
   resolved "https://registry.yarnpkg.com/command-exists/-/command-exists-1.2.9.tgz#c50725af3808c8ab0260fd60b01fbfa25b954f69"
   integrity sha512-LTQ/SGc+s0Xc0Fu5WaKnR0YiygZkm9eKFvyS+fRsU7/ZWFF8ykFM6Pc9aCVf1+xasOOZpO3BAVgVrKvsqKHV7w==
+
+commander@2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.6.0.tgz#9df7e52fb2a0cb0fb89058ee80c3104225f37e1d"
+  integrity sha1-nfflL7Kgyw+4kFjugMMQQiXzfh0=
 
 commander@^2.11.0, commander@^2.19.0, commander@^2.20.0:
   version "2.20.3"
@@ -2638,6 +2643,13 @@ git-commit-msg-linter@^4.1.1:
     chalk "^2.4.2"
     did-you-mean "^0.0.1"
     supports-color "^8.1.1"
+
+git-scripts@^0.6.4:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/git-scripts/-/git-scripts-0.6.4.tgz#b5198c4d6fb95362ca8c718cce342e1ac01635c4"
+  integrity sha512-WON2sCnnmqs01crLErDZFTBvKoy4vojRUrJnXOx6mAbSNAinU1eKvAmFlsNtZNv0VArbYMFX2y+wXaWEaHohdg==
+  dependencies:
+    commander "2.6.0"
 
 glob-parent@^3.1.0:
   version "3.1.0"
@@ -5306,13 +5318,13 @@ surge-ignore@0.2.0:
   resolved "https://registry.yarnpkg.com/surge-ignore/-/surge-ignore-0.2.0.tgz#5a7f8a20a71188cf9e75a2cfe8eb182de90daf3b"
   integrity sha1-Wn+KIKcRiM+edaLP6OsYLekNrzs=
 
-surge@^0.23.0:
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/surge/-/surge-0.23.0.tgz#aefb30620221a198c228ed3b9f45a2c4e8b23e74"
-  integrity sha512-9SJEREttCb/aMpp7hcNHh33hniv1Lh3hI22TqHKGHU6YEYU4Iovs11K4vtgWhODAyCY1md2/vHj1M35MI6WnBg==
+surge@^0.23.1:
+  version "0.23.1"
+  resolved "https://registry.yarnpkg.com/surge/-/surge-0.23.1.tgz#3cb283edad4e632e27162c633863ef4a915b961d"
+  integrity sha512-w92meVuKxqO1up0JpSe2iVSiVTv7E7t1qDA9fZhCSZx/+6Q85I3Y2LCoZIcWLpMm9BM0iB843NAWAwdScTR4Uw==
   dependencies:
     cli-table3 "^0.5.1"
-    colors "^1.4.0"
+    colors "1.4.0"
     inquirer "^6.2.2"
     is-domain "0.0.1"
     minimist "1.2.3"
