@@ -18,5 +18,10 @@
     "parcel-bundler": "^1.6.1",
     "sass": "^1.43.3"
   },
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./ --domain ramengo-dev.surge.sh"
+    }
+  },
   "keywords": []
 }
