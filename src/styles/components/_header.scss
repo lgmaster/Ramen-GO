@@ -4,8 +4,15 @@
   height: toRem(768px);
 
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
+  
+  .logo {
+    position: absolute;
+    top: toRem(44px);
+    left: toRem(40px);
+  }
 
   &__container {
     width: toRem(825px);
@@ -115,8 +122,17 @@
 
 @media (min-width: 0px) and (max-width: 700px) {
   .header {
-    padding-top: toRem(50px);
+    flex-direction: row;
+    align-items: center;
+    padding-top: toRem(120px);
     height: toRem(677px);
+
+    .logo {
+      top: toRem(20px);
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
 
     &__container {
       flex-direction: column-reverse;
