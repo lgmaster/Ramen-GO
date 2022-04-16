@@ -43,6 +43,12 @@ button {
   }
 }
 
+.container {
+  max-width: toRem(1082px);
+  width: 100%;
+  margin: 0 auto;
+}
+
 .btn {
   width: toRem(213px);
   height: toRem(60px);
