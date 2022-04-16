@@ -22,8 +22,7 @@
   }
 
   .items__container {
-    margin-top: toRem(40px);
-    display: grid;
+    margin-top: toRem(40px) !important;
     grid-template-columns: repeat(3, 1fr);
   } 
 
@@ -35,6 +34,7 @@
     border-radius: toRem(11px);
     padding: toRem(45px) toRem(30px);
     margin: 0 auto toRem(30px);
+    cursor: pointer;
 
     &__title {
       color: $color-1;
@@ -60,5 +60,17 @@
 
   &__btn {
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 700px) {
+  .items__container {
+    display: grid !important;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 950px) {
+  .items__container {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
