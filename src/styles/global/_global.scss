@@ -1,0 +1,85 @@
+@import "./functions";
+@import "./variables";
+
+* {
+  font-family: $Mplus;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, button {
+  font-family: $Mplus;
+}
+
+button {
+  cursor: pointer;
+}
+  
+:disabled {
+  opacity: 0.1 !important;
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+.btn {
+  width: toRem(213px);
+  height: toRem(60px);
+  padding: toRem(12px);
+  border-radius: toRem(30px);
+  border: 0;
+  font-size: toRem(14px);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  transition: background 0.2s;
+
+  &.btn--primary {
+    background: $btn-1;
+  
+    i {
+      display: block;
+      width: toRem(20px);
+      height: toRem(16px);
+      background: url("../images/icons/btn/btn-1.svg") no-repeat;
+    }
+  }
+  
+  &.btn--secondary {
+    background: $btn-2;
+  
+    i {
+      display: block;
+      width: toRem(20px);
+      height: toRem(16px);
+      background: url("../images/icons/btn/btn-2.svg") no-repeat;
+    }
+  }
+
+  &:hover {
+    background: $color-0;
+  }
+}
