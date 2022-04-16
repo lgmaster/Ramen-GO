@@ -1,0 +1,19 @@
+.splide__pagination {
+  
+  bottom: toRem(0px);
+}
+
+.splide__pagination__page {
+
+  background: $disabled;
+  width: toRem(12px);
+  height: toRem(12px);
+  margin: toRem(0px) toRem(8px);
+
+  &.is-active {
+    background: $color-2;
+    width: toRem(36px);
+    border-radius: toRem(50px);
+    transform: none !important;
+  }
+}
