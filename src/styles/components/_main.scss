@@ -1,7 +1,9 @@
 .main {
   background: $color-4;  
   text-align: center;
+  padding-top: toRem(115px);
   padding-bottom: toRem(100px);
+
 
   h2 {
     font-size: toRem(32px);
@@ -14,14 +16,15 @@
   }
 
   .container {
-    margin-top: toRem(115px);
+    & + div {
+      margin-top: toRem(100px);
+    }
   }
 
-  &__container {
+  .items__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
-    margin-top: toRem(7px);
   } 
 
   .item {
