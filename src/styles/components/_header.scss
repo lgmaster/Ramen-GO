@@ -54,6 +54,7 @@
   &__icon--left {
     display: block;
     background-image: url("../../src/images/header/balao-azul.png");
+    background-size: contain;
     width: toRem(116px);
     height: toRem(129px);
     position: absolute;
@@ -64,6 +65,7 @@
   &__icon--right {
     display: block;
     background-image: url("../../src/images/header/balao-amarelo.png");
+    background-size: contain;
     width: toRem(106px);
     height: toRem(242px);
     position: absolute;
