@@ -108,6 +108,82 @@
   &__btn {
     position: absolute;
     margin-top: toRem(180px);
+    z-index: 1;
   }
   
+}
+
+@media (min-width: 0px) and (max-width: 700px) {
+  .header {
+    padding-top: toRem(50px);
+    height: toRem(677px);
+
+    &__container {
+      flex-direction: column-reverse;
+    }
+
+    &__block {
+      width: 100%;
+    }
+
+    &__text--left {
+      color: $color-3;
+      font-weight: 900;
+      font-size: toRem(48px);
+      writing-mode: initial;
+      text-align: center;
+    }
+
+    &__text--right {
+      position: relative;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 0;
+      letter-spacing: toRem(-5px);
+      text-align: center;
+      line-height: toRem(120px);
+    }
+
+    &__text {
+      position: relative;
+      max-width: toRem(300px);
+      margin: toRem(30px) auto 0;
+      text-align: center;
+    }
+
+    &__icon--left {
+      width: toRem(45px);
+      height: toRem(50px);
+      left: toRem(20px)
+    }
+
+    &__icon--right {
+      width: toRem(41px);
+      height: toRem(95px);
+      top: toRem(100px);
+      right: toRem(13px)
+    }
+  
+    &__item {
+      position: relative;
+      width: toRem(300px);
+      height: toRem(300px);
+  
+      &::before {
+        width: toRem(231px);
+        height: toRem(231px);
+      }
+  
+      &::after {
+        width: toRem(262px);
+        height: toRem(269px);
+      }
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
 }
