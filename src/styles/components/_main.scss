@@ -25,7 +25,6 @@
     margin-top: toRem(40px);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: toRem(60px);
   } 
 
   .item {
@@ -35,7 +34,7 @@
     box-shadow: 0px 4px 12px rgba(224, 219, 191, 0.6);
     border-radius: toRem(11px);
     padding: toRem(45px) toRem(30px);
-    align-self: center;
+    margin: 0 auto toRem(30px);
 
     &__title {
       color: $color-1;
