@@ -1,0 +1,111 @@
+.header {
+  background-image: url("../../src/images/header/header-background.svg");
+  background-size: cover;
+  height: toRem(768px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    width: toRem(825px);
+    height: toRem(683px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__block {
+    height: toRem(450px);
+  }
+
+  &__text--left {
+    color: $color-3;
+    font-weight: 900;
+    font-size: toRem(48px);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin-left: toRem(-18px);
+  }
+
+  &__text {
+    color: #ffffff;
+    font-size: toRem(16px);
+    font-weight: 500;
+    position: absolute;
+    max-width: toRem(201px);
+    margin-top: toRem(50px);
+    z-index: 1;
+  }
+
+  &__text--right {
+    color: $color-4;
+    font-weight: 900;
+    font-size: toRem(160px);
+    position: absolute;
+    z-index: 1;
+    left: toRem(50px);
+    top: toRem(160px);
+    letter-spacing: toRem(-5px);
+  }
+  
+  &__icon--left {
+    display: block;
+    background-image: url("../../src/images/header/balao-azul.png");
+    width: toRem(116px);
+    height: toRem(129px);
+    position: absolute;
+    top: toRem(9px);
+    left: 0;
+  }
+
+  &__icon--right {
+    display: block;
+    background-image: url("../../src/images/header/balao-amarelo.png");
+    width: toRem(106px);
+    height: toRem(242px);
+    position: absolute;
+    top: toRem(257px);
+    right: toRem(-10px);
+  }
+
+  &__item {
+    width: toRem(666px);
+    height: toRem(683px);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-right: toRem(10px);
+
+
+    &::before {
+      content: "";
+      display: block;
+      width: toRem(587px);
+      height: toRem(587px);
+      background: $elipse-0;
+      border-radius: 100%;
+    }
+
+    &::after {
+      content: "";
+      display: block;      
+      width: toRem(666px);
+      height: toRem(683px);
+      background-image: url("../../src/images/header/entregadora.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+      position: absolute;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    margin-top: toRem(180px);
+  }
+  
+}
