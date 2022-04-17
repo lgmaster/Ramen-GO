@@ -35,12 +35,74 @@
     padding: toRem(45px) toRem(30px);
     margin: 0 auto toRem(30px);
     cursor: pointer;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__image {
+
+      height: toRem(100px);
+      width: toRem(100px);
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      &.salt {
+        background-image: url("../../src/images/icons/salt/inactive.svg");
+      }
+
+      &.shoyu {
+        background-image: url("../../src/images/icons/shoyu/inactive.svg");
+      }
+
+      &.miso {
+        background-image: url("../../src/images/icons/miso/inactive.svg");
+      }
+
+      &.chasu {
+        background-image: url("../../src/images/icons/chasu/inactive.svg");
+      }
+
+      &.yasai_vegetarian {
+        background-image: url("../../src/images/icons/yasai_vegetarian/inactive.svg");
+      }
+
+      &.karaague {
+        background-image: url("../../src/images/icons/karaague/inactive.svg");
+      }
+
+      &.salt.active {
+        background-image: url("../../src/images/icons/salt/active.svg");
+      }
+
+      &.shoyu.active {
+        background-image: url("../../src/images/icons/shoyu/active.svg");
+      }
+
+      &.miso.active {
+        background-image: url("../../src/images/icons/miso/active.svg");
+      }      
+
+      &.chasu.active {
+        background-image: url("../../src/images/icons/chasu/active.svg");
+      }
+
+      &.yasai_vegetarian.active {
+        background-image: url("../../src/images/icons/yasai_vegetarian/active.svg");
+      }
+
+      &.karaague.active {
+        background-image: url("../../src/images/icons/karaague/active.svg");
+      }
+    }
+    
 
     &__title {
       color: $color-1;
       font-size: toRem(20px);
       font-weight: 900;
       margin-top: toRem(10px);
+      text-transform: capitalize;
     }
 
     &__description {
