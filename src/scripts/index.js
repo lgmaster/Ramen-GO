@@ -4,9 +4,10 @@ import { carouselModule } from './carousel'
 
 (function() {
 
-  carouselModule.init();
   productsModule.init();  
   orderModule.init();
+  carouselModule.init();
+
 
   [...document.querySelectorAll('.item')].map(item => item.addEventListener('click', (e) => {
     const target = e.currentTarget;

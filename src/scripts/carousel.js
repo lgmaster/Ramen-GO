@@ -11,20 +11,16 @@ export const carouselModule = (function() {
       700: {
         destroy: false,
       },
-      3000: {
-        destroy: true,
-        'completely': true
+      10000: {
+        destroy: true
       },
     }
 
   }
-
-  const splideOne = new Splide( '.splide__broth' , options);
-  const splideTwo = new Splide( '.splide__meal' , options);
-
+  
   const mountCarousels = () => {
-    splideOne.mount();
-    splideTwo.mount();
+    const splideOne = new Splide( '.splide__broth' , options).mount();
+    const splideTwo = new Splide( '.splide__meal' , options).mount();
   }
 
   return {
