@@ -71,32 +71,8 @@
         background-image: url("../../src/images/icons/karaague/inactive.svg");
       }
 
-      &.salt.active {
-        background-image: url("../../src/images/icons/salt/active.svg");
-      }
-
-      &.shoyu.active {
-        background-image: url("../../src/images/icons/shoyu/active.svg");
-      }
-
-      &.miso.active {
-        background-image: url("../../src/images/icons/miso/active.svg");
-      }      
-
-      &.chasu.active {
-        background-image: url("../../src/images/icons/chasu/active.svg");
-      }
-
-      &.yasai_vegetarian.active {
-        background-image: url("../../src/images/icons/yasai_vegetarian/active.svg");
-      }
-
-      &.karaague.active {
-        background-image: url("../../src/images/icons/karaague/active.svg");
-      }
-    }
+    }    
     
-
     &__title {
       color: $color-1;
       font-size: toRem(20px);
@@ -104,7 +80,7 @@
       margin-top: toRem(10px);
       text-transform: capitalize;
     }
-
+    
     &__description {
       margin-top: toRem(10px);
       color: $color-0;
@@ -118,6 +94,48 @@
       font-weight: 900;
       color: $color-2;
     }
+
+    &.active {
+      background: $color-1;
+
+      & .salt {
+        background-image: url("../../src/images/icons/salt/active.svg");
+      }
+  
+      & .shoyu {
+        background-image: url("../../src/images/icons/shoyu/active.svg");
+      }
+  
+      & .miso {
+        background-image: url("../../src/images/icons/miso/active.svg");
+      }      
+  
+      & .chasu {
+        background-image: url("../../src/images/icons/chasu/active.svg");
+      }
+  
+      & .yasai_vegetarian {
+        background-image: url("../../src/images/icons/yasai_vegetarian/active.svg");
+      }
+  
+      & .karaague {
+        background-image: url("../../src/images/icons/karaague/active.svg");
+      }
+
+      & .item__title {
+        color: #fff;
+      }
+
+      & .item__description {
+        color: #fff;
+      }
+
+      & .item__price {
+        color: $color-3;
+      }
+    }
+
+
   }
 
   &__btn {
