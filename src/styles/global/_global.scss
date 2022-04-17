@@ -23,8 +23,9 @@ body, input, textarea, button {
   font-family: $Mplus;
 }
 
-button {
+button, a {
   cursor: pointer;
+  text-decoration: none;
 }
   
 :disabled {
