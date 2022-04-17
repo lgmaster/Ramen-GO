@@ -73,7 +73,7 @@ export const productsModule = (function () {
   }
 
   return {
-    loadFolders: function () {
+    init: function () {
       getProducts();
     }
   }
