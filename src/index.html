@@ -21,7 +21,7 @@
           <h1 class="header__text">
             Enjoy a good ramen in the comfort of your house. Create your own ramen and choose your favorite flavour combination!
           </h1>
-          <button class="header__btn btn btn--secondary">ORDER NOW <i></i></button>
+          <a href="#main" class="header__btn btn btn--secondary">ORDER NOW <i></i></a>
         </div>
         <div class="header__item">
           <i class="header__icon--left"></i>
@@ -29,45 +29,14 @@
         </div>
       </div>
     </header>
-    <main class="main">
+    <main id="main" class="main">
       <div class="container">
         <h2>First things first: select your favorite broth.</h2>
         <p>It will give the whole flavor on your ramen soup. </p>
 
         <div class="splide splide__broth container">
           <div class="splide__track">
-            <div class="items__container splide__list">
-              <div class="item splide__slide">
-                <img class="item__img" src="./images/icons/salt/inactive.svg" alt="Salt">
-                <p class="item__title">Salt</p>
-                <p class="item__description">Simple like the seawater, nothing more </p>
-                <p class="item__price">US$ 10</p>
-              </div>
-              <div class="item splide__slide">
-                <img class="item__img" src="./images/icons/salt/inactive.svg" alt="Salt">
-                <p class="item__title">Salt</p>
-                <p class="item__description">Simple like the seawater, nothing more </p>
-                <p class="item__price">US$ 10</p>
-              </div>
-              <div class="item splide__slide">
-                <img class="item__img" src="./images/icons/salt/inactive.svg" alt="Salt">
-                <p class="item__title">Salt</p>
-                <p class="item__description">Simple like the seawater, nothing more </p>
-                <p class="item__price">US$ 10</p>
-              </div>
-              <div class="item splide__slide">
-                <img class="item__img" src="./images/icons/salt/inactive.svg" alt="Salt">
-                <p class="item__title">Salt</p>
-                <p class="item__description">Simple like the seawater, nothing more </p>
-                <p class="item__price">US$ 10</p>
-              </div>
-              <div class="item splide__slide">
-                <img class="item__img" src="./images/icons/salt/inactive.svg" alt="Salt">
-                <p class="item__title">Salt</p>
-                <p class="item__description">Simple like the seawater, nothing more </p>
-                <p class="item__price">US$ 10</p>
-              </div>
-            </div>
+            <div class="items__container splide__list broth__list"></div>
           </div>
         </div>
       </div>
@@ -77,47 +46,19 @@
         <p>Some people love, some don’t. We have options for all tastes.</p>
         <div class="splide splide__meal container">
           <div class="splide__track">
-            <div class="items__container splide__list">
-              <div class="item splide__slide">
-                <img class="item__img" src="./images/icons/salt/inactive.svg" alt="Salt">
-                <p class="item__title">Salt</p>
-                <p class="item__description">Simple like the seawater, nothing more </p>
-                <p class="item__price">US$ 10</p>
-              </div>
-              <div class="item splide__slide">
-                <img class="item__img" src="./images/icons/salt/inactive.svg" alt="Salt">
-                <p class="item__title">Salt</p>
-                <p class="item__description">Simple like the seawater, nothing more </p>
-                <p class="item__price">US$ 10</p>
-              </div>
-              <div class="item splide__slide">
-                <img class="item__img" src="./images/icons/salt/inactive.svg" alt="Salt">
-                <p class="item__title">Salt</p>
-                <p class="item__description">Simple like the seawater, nothing more </p>
-                <p class="item__price">US$ 10</p>
-              </div>
-              <div class="item splide__slide">
-                <img class="item__img" src="./images/icons/salt/inactive.svg" alt="Salt">
-                <p class="item__title">Salt</p>
-                <p class="item__description">Simple like the seawater, nothing more </p>
-                <p class="item__price">US$ 10</p>
-              </div>
-              <div class="item splide__slide">
-                <img class="item__img" src="./images/icons/salt/inactive.svg" alt="Salt">
-                <p class="item__title">Salt</p>
-                <p class="item__description">Simple like the seawater, nothing more </p>
-                <p class="item__price">US$ 10</p>
-              </div>
-            </div>
+            <div class="items__container splide__list meat__list"></div>
           </div>
         </div>
       </div>
 
       <div class="container">
-        <button class="main__btn btn btn--primary">PLACE MY ORDER <i></i></button>
+        <a class="main__btn btn btn--primary">PLACE MY ORDER <i></i></a>
       </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"></script>
+    
+    
+    <script src="./scripts/index.js"></script>
     <script>
 
       var options = {
