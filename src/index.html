@@ -52,40 +52,11 @@
       </div>
 
       <div class="container">
-        <a class="main__btn btn btn--primary">PLACE MY ORDER <i></i></a>
+        <a class="main__btn btn btn--primary" id="order">PLACE MY ORDER <i></i></a>
       </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"></script>
-    
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"></script>   
     <script src="./scripts/index.js"></script>
-    <script>
-
-      var options = {
-        arrows: false,
-        perPage: 1,
-        width: '100%',
-        fixedWidth: '20rem',
-        padding: '1rem',
-        gap: '1rem',
-        focus: 'center',
-        breakpoints: {
-          700: {
-            destroy: false,
-          },
-          3000: {
-            destroy: true,
-            'completely': true
-          },
-        }
-
-      }
-
-      var splideOne = new Splide( '.splide__broth' , options);
-      splideOne.mount();
-
-      var splideTwo = new Splide( '.splide__meal' , options);
-      splideTwo.mount();
-    </script>
   </body>
 </html>
