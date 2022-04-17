@@ -46,12 +46,12 @@ export const productsModule = (function () {
 
   const generateTemplate = (type, product) => {
     return `
-      <div class="item splide__slide" data-type="${type}" data-id="${product.id}">
+      <a href="#meat-list" class="item splide__slide" data-type="${type}" data-id="${product.id}">
         <div class="item__image ${product.id}"></div>
         <p class="item__title">${product.name}</p>
         <p class="item__description">${product.description}</p>
         <p class="item__price">US$ ${product.price}</p>
-      </div>
+      </a>
     `
   }
 
