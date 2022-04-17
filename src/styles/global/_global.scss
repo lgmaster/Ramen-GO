@@ -15,6 +15,10 @@
   user-select: none;
 }
 
+html{
+  scroll-behavior:smooth
+}
+
 body {
   -webkit-font-smoothing: antialiased;
 }
