@@ -77,6 +77,7 @@ button, a {
       width: toRem(20px);
       height: toRem(16px);
       background: url("../../images/icons/btn/btn-1.svg") no-repeat;
+      background-size: contain;
     }
   }
   
@@ -88,6 +89,7 @@ button, a {
       width: toRem(20px);
       height: toRem(16px);
       background: url("../../images/icons/btn/btn-2.svg") no-repeat;
+      background-size: contain;
     }
 
     &:hover {
