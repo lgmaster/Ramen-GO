@@ -1,5 +1,5 @@
 .header {
-  background-image: url("../../src/images/header/header-background.svg");
+  background-image: url("../../../src/images/header/header-background.svg");
   background-size: cover;
   height: toRem(768px);
 
@@ -60,7 +60,7 @@
   
   &__icon--left {
     display: block;
-    background-image: url("../../src/images/header/balao-azul.png");
+    background-image: url("../../images/header/balao-azul.png");
     background-size: contain;
     width: toRem(116px);
     height: toRem(129px);
@@ -71,7 +71,7 @@
 
   &__icon--right {
     display: block;
-    background-image: url("../../src/images/header/balao-amarelo.png");
+    background-image: url("../../images/header/balao-amarelo.png");
     background-size: contain;
     width: toRem(106px);
     height: toRem(242px);
@@ -104,7 +104,7 @@
       display: block;      
       width: toRem(666px);
       height: toRem(683px);
-      background-image: url("../../src/images/header/entregadora.png");
+      background-image: url("../../images/header/entregadora.png");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: right;

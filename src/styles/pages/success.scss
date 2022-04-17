@@ -1,4 +1,4 @@
-@import "./global/global";
+@import "../global/global";
 
 .main {
   width: 100%;
@@ -15,7 +15,7 @@
   }
 
   .order {
-    background-image: url("../../src/images/success/pattern-azul.png");
+    background-image: url("../../images/success/pattern-azul.png");
     background-size: cover;
     flex-direction: column;
 
