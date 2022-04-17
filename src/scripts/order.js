@@ -10,7 +10,7 @@ export const orderModule = (function () {
     sessionStorage.setItem('order', JSON.stringify(order));
   }
 
-  const placeOrder = () => {
+  const checkOrderCompleted = () => {
     const order = sessionStorage.getItem('order');
 
     if(order) {
@@ -18,9 +18,19 @@ export const orderModule = (function () {
       const list = JSON.parse(order);
       
       if(Object.keys(list).length === 2) {
-        window.location.href = '/success'
+        return true;
+      } else {
+        return false;
       }
   
+    } else {
+      return false;
+    }
+  }
+
+  const placeOrder = () => {
+    if(checkOrderCompleted()) {
+      window.location.href = '/success'
     }
   }
 
@@ -33,6 +43,9 @@ export const orderModule = (function () {
     },
     success: function() {
       placeOrder()
+    },
+    check: function () {
+      return checkOrderCompleted()
     }
   }
 })()

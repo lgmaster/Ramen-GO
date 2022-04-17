@@ -28,10 +28,18 @@ import { carouselModule } from './carousel'
     checkActiveElements(itemsMeat);
 
     orderModule.setOrder(target.dataset.type, target.dataset.id);
+
+    if(orderModule.check()) {
+      const btnPlaceMyOrder = document.querySelector('#order');
+      
+      btnPlaceMyOrder.removeAttribute('disabled');
+      btnPlaceMyOrder.classList.remove('btn--primary')
+      btnPlaceMyOrder.classList.add('btn--secondary')
+    }
     
   }))
 
-  document.querySelector('#order').addEventListener('click', () => {
+  document.querySelector('#order').addEventListener('click', (e) => {
     orderModule.success();
   })
 
